@@ -1,0 +1,70 @@
+.app-page .container {
+    
+    margin-top: 80px;
+    /* 添加上边距，避免内容与导航栏重叠 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.app-page .container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.app-page .container2 > * {
+    margin-right: 20px; /* 给右侧添加20px的外边距 */
+  }
+
+  .hotIP-page .container2 > :last-child {
+    margin-right: 0; /* 最后一个元素不添加右侧外边距 */
+  }
+
+.app-page .text-section hr {
+    width: 50px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.app-page .安卓下载图{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+    /* 设置宽度 */
+    height: 100vh;
+    /* 设置高度 */
+    background-image: url("../images/应用/安卓.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.app-page .ios下载图{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 60vw;
+    /* 设置宽度 */
+    height: 60vh;
+    /* 设置高度 */
+    background-image: url("../images/应用/ios.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+    left:20vw;
+}

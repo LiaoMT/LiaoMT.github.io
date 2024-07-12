@@ -1,0 +1,374 @@
+.hotIP-page .container {
+    
+    margin-top: 80px;
+    /* 添加上边距，避免内容与导航栏重叠 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hotIP-page .container2 {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.hotIP-page .container_标题 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hotIP-page .container2 > * {
+    margin-right: 20px; /* 给右侧添加20px的外边距 */
+  }
+
+  .hotIP-page .container2 > :last-child {
+    margin-right: 0; /* 最后一个元素不添加右侧外边距 */
+  }
+
+.hotIP-page .text-section hr {
+    width: 50px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+
+.hotIP-page .container2 .IP_当前发售1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面1.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .IP_当前发售2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面2.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .IP_当前发售3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面3.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .IP_当前发售4{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面4.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .IP_当前发售5{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面5.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .IP_当前发售6{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面6.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .IP_当前发售7{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/当前发售子界面/当前发售子界面7.jpg");
+    /* 背景图片 */
+    background-size: 32.5% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .在研IP1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (1).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (2).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (3).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP4{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (4).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP5{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (5).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP6{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (6).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP7{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (7).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP8{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (8).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP9{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (9).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP10{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (10).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hotIP-page .container2 .在研IP11{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (11).png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.hotIP-page .container2 .在研IP12{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24.8vw;
+    /* 设置宽度 */
+    height: 33vh;
+    /* 设置高度 */
+    background-image: url("../images/IP/IP (12).jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+
+}

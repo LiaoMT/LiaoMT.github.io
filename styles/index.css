@@ -1,0 +1,780 @@
+ body, html {
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     height: 100%;
+ }
+
+
+ /* #region 首页导航栏样式 */
+ .navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     background-color: rgba(0, 0, 0, 0.5);
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1000;
+     /* 保证导航栏在最上层 */
+ }
+
+ .navbar:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* 保证导航栏在最上层 */
+}
+
+.navbar:hover .menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+ .navbar .logo {
+     width: 100px;
+     /* 设置宽度 */
+     height: 100px;
+     /* 设置高度 */
+     background-image: url("../images/logo.png");
+     /* 背景图片 */
+     background-size: contain;
+     /* 使图片适应容器大小 */
+     background-repeat: no-repeat;
+     /* 防止图片重复 */
+     background-position: center;
+     /* 将图片居中 */
+ }
+
+ .navbar .menu {
+     display: flex;
+     gap: 20px;
+ }
+
+ .navbar .menu a {
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+ }
+
+ .navbar .contact {
+     position: absolute;
+     right: 55px;
+     display: flex;
+     align-items: center;
+ }
+
+ .navbar .contact i {
+     margin-right: 10px;
+     color: #fff;
+ }
+
+ .navbar .contact span {
+    color: #fff;
+}
+
+ .navbar:hover .contact i {
+    margin-right: 10px;
+    color: rgb(0, 115, 255);
+}
+
+.navbar:hover .contact span {
+    color: rgb(0, 115, 255);
+}
+
+.navbar:hover .contact {
+    position: absolute;
+    right: 55px;
+    color: rgb(0, 115, 255);
+    display: flex;
+    align-items: center;
+}
+
+ .navbar .separator {
+     margin-right: 10px;
+     border-left: 1px solid white;
+     height: 20px;
+ }
+
+
+ /* 设置菜单项样式 */
+ .menu a {
+     margin: 0 10px;
+     text-decoration: none;
+     color: black;
+     font-size: 16px;
+     padding: 14px 20px;
+ }
+
+ .menu a:hover {
+     background-color: #ddd;
+     color: rgb(3, 103, 254);
+ }
+
+ /* 设置下拉菜单容器样式 */
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* 设置下拉按钮样式 */
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 隐藏下拉内容 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 50%;
+    /* 左边距设置为50% */
+    transform: translateX(-50%);
+    /* 使用 transform 将其水平居中 */
+    top:140%;
+}
+
+/* 设置下拉内容中的每一项的样式 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 鼠标悬停时显示下拉内容 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 鼠标悬停时导航文本变色 */
+.dropdown:hover .dropbtn a {
+    color: rgb(3, 103, 254);
+}
+
+/* 鼠标悬停时显示小三角形 */
+.dropdown:hover .dropbtn::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #00c8ff;
+}
+
+/* 鼠标悬停在下拉按钮时显示下拉内容，并设置颜色 */
+.dropdown:hover .dropdown-content a {
+    display: block;
+    color: black;
+}
+/* #endregion */
+
+/* #region 轮播图样式 */
+ .slider {
+     position: relative;
+     width: 100%;
+     max-width: 99vw;
+     height: 80vh;
+     overflow: hidden;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+ }
+
+ .slides {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .slide {
+     min-width: 100%;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .slide img {
+     width: 100%;
+     height: 100%;
+     display: block;
+ }
+
+ .nav-buttons, .dots {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+
+ .nav-buttons {
+     position: absolute;
+     bottom: 10px;
+     /* 距离底部10px */
+     right: -35%;
+     /* 距离右侧10px */
+     display: flex;
+     gap: 10px;
+     /* 按钮之间的间距 */
+ }
+
+ .nav-button {
+     background: rgba(255, 255, 255, 0.7);
+     border: none;
+     font-size: 2em;
+     cursor: pointer;
+     padding: 0 10px;
+     border-radius: 50%;
+     transition: background 0.9s;
+ }
+
+ .nav-button:hover {
+     background: blue;
+     color: white;
+ }
+
+ .dots {
+     position: absolute;
+     bottom: 20px;
+     left: 20%;
+     transform: translateX(-50%);
+     display: flex;
+     gap: 5px;
+ }
+
+ .dot {
+     height: 15px;
+     width: 15px;
+     margin: 0 5px;
+     background-color: #bbb;
+     border-radius: 50%;
+     /* 使按钮呈现圆形 */
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+
+ .active {
+     background-color: #08d5f9;
+ }
+
+ /* 滚动图标样式 */
+ .scroll-icon {
+     position: absolute;
+     bottom: 30px;
+     /* 根据需要调整距离底部的距离 */
+     left: 50%;
+     transform: translateX(-50%);
+     text-align: center;
+     animation: blink 1.5s infinite;
+ }
+
+ @keyframes blink {
+     0%, 100% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0;
+     }
+ }
+
+ .p_scrool {
+     position: absolute;
+     left: 50%;
+     bottom: 20px;
+     z-index: 10;
+     transform: translate(-50%, 0)
+ }
+
+ .p_scrool span {
+     text-transform: uppercase;
+     color: #fff;
+     display: block;
+     font-family: arial;
+     line-height: 20px;
+     margin-bottom: 12px;
+     font-size: 12px
+ }
+
+ .p_scrool i {
+     display: block;
+     width: 20px;
+     height: 30px;
+     border-radius: 12px;
+     border: 2px #fff solid;
+     position: relative;
+     margin: 0 auto
+ }
+
+ .p_scrool i:before {
+     content: "";
+     display: block;
+     width: 4px;
+     height: 10px;
+     background: #fff;
+     border-radius: 2px;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, 0);
+     top: 3px;
+     animation: scrollmouse 2s linear infinite
+ }
+/* #endregion 轮播图样式 */
+
+ /*#region 常驻图标的样式*/
+ .floating-icon1 span img{
+    z-index: 1000;
+    position: fixed;
+    bottom: 360px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .floating-icon1 img {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    bottom: 350px;
+    right: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .floating-icon2 span img{
+    z-index: 1000;
+    position: fixed;
+    bottom: 308px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .floating-icon2 img {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    bottom: 298px;
+    right: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .floating-icon3 span img{
+    z-index: 1000;
+    position: fixed;
+    bottom: 256px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .floating-icon3 img {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    bottom: 246px;
+    right: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .floating-icon4 span img{
+    z-index: 1000;
+    position: fixed;
+    bottom: 204px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .floating-icon4 img {
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    bottom: 194px;
+    right: 80px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  [class^="floating-icon"]:hover img {
+    display: block;
+  }
+
+  /*#endregion*/
+
+
+  /*#region 合作伙伴的样式*/
+  body .friends {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+.partners-section {
+    text-align: center;
+    padding: 50px 0;
+    flex: 1;
+}
+
+.partners-section h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.partners-section h2 {
+    font-size: 18px;
+    margin: 10px 0 40px;
+    color: #666;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.partners-logos .logo {
+    width: 230px;
+
+    height: 170px;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    margin: 10px;
+
+}
+
+
+.partners-logos .logo1 {
+    background-image: url("../images/partner_icon (1).png");
+}
+
+.partners-logos .logo2 {
+    background-image: url('../images/partner_icon (2).png');
+}
+
+.partners-logos .logo3 {
+    background-image: url('../images/partner_icon (3).png');
+}
+
+.partners-logos .logo4 {
+    background-image: url('../images/partner_icon (4).png');
+}
+
+.partners-logos .logo5 {
+    background-image: url('../images/partner_icon (5).png');
+}
+
+ /*#endregion 合作伙伴的样式*/
+
+/*#region 尾页公司信息样式*/
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: auto;
+    top:-50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .container {
+    position: relative;
+    height: 120px;
+    /* Adjust the container height as needed */
+    width: 100%;
+    /* Adjust the container width as needed */
+}
+
+
+.footer .footer-content div {
+    margin: 10px 0;
+}
+
+.footer .logo {
+    width: 70px;
+    /* 设置宽度 */
+    height: 70px;
+    /* 设置高度 */
+    background-image: url("../images/logo.png");
+    /* 背景图片 */
+    background-size: contain;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    position: absolute;
+    /* 绝对定位 */
+    left: 60px;
+    /* 调整距离左侧的距离 */
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.712);
+    /* Change this to your desired color */
+    height: 0;
+    width: 95%;
+    /* Adjust the width as needed */
+    position: absolute;
+    left: 50%;
+    /* 将左边缘移动到容器的 50% 位置 */
+    transform: translateX(-50%);
+    /* 将线的中点对齐到容器的 50% 位置 */
+}
+
+.horizontal-line.top {
+    top: 25px;
+    /* Set the top position */
+}
+
+.horizontal-line.mid {
+    top: 280px;
+    /* Set the bottom position */
+}
+
+.horizontal-line.bottom {
+    top: 560px;
+    /* Set the bottom position */
+}
+
+.vertical-line {
+    border-left: 1px solid rgba(255, 255, 255, 0.712);
+    /* Change this to your desired color */
+    height: 255px;
+    /* Adjust the height as needed */
+    position: absolute;
+}
+
+.vertical-line.left {
+    left: 1000px;
+    top:23px;
+    /* Set the left position */
+}
+
+.vertical-line.right {
+    right: 60px;
+    top:23px;
+    /* Set the right position */
+}
+
+.footer .footer-content .social-icons {
+    position: relative;
+    height: 40px;
+    /* Adjust the container height as needed */
+    width: 40%;
+    /* Adjust the container width as needed */
+    left: 100px;
+    bottom: 25px;
+}
+
+.footer .footer-content .social-icons .fa {
+    width: 30px;
+    /* 设置宽度 */
+    height: 30px;
+    /* 设置高度 */
+    background-size: contain;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    /* 防止图片重复 */
+    position: absolute;
+    /* 绝对定位 */
+
+}
+
+.footer .footer-content .social-icons .微博 {
+    background-image: url("../images/尾页/超链接/微博.png");
+    right: 40px;
+    top: 40px;
+}
+.footer .footer-content .social-icons .微信 {
+    background-image: url("../images/尾页/超链接/微信.png");
+    right: 0px;
+    top: 40px;
+}
+.footer .footer-content .social-icons .抖音 {
+    background-image: url("../images/尾页/超链接/抖音.png");
+    right: -40px;
+    top: 40px;
+}
+.footer .footer-content .social-icons .小红书 {
+    background-image: url("../images/尾页/超链接/小红书.png");
+    right: -80px;
+    top: 40px;
+}
+.footer .footer-content .social-icons .哔哩哔哩 {
+    background-image: url("../images/尾页/超链接/B站.png");
+    right: -120px;
+    top: 40px;
+}
+
+
+.footer .footer-content div h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+
+}
+
+.message {
+    display: flex;
+    justify-content: space-around; /* 子元素在主轴上均匀分布 */
+    flex-wrap: wrap;
+    position: relative; /* 相对于其正常位置定位 */
+    bottom: 350px; /* 从正常位置向下移动 */
+    margin-top: 20px; /* 与上一个元素的间距 */
+    margin-bottom: 20px; /* 与下一个元素的间距 */
+    width: 100%; /* 宽度 */
+}
+
+.footer .footer-content div p {
+    margin: 5px 0;
+    color: #cbcbcb;
+}
+
+.qr-codes {
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: flex-start;
+
+    gap: 40px;
+    margin: 30px;
+    position: relative; /* 相对于其正常位置定位 */
+    top: 150px; /* 从正常位置向下移动 */
+
+}
+
+.qr-codes .qr-code {
+    text-align: center;
+
+    margin: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-codes .qr-image {
+    width: 120px;
+
+    height: 120px;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    margin-top: 20px;
+
+    margin: 20px;
+}
+
+
+.qr-codes .qr-code .微信公众号 {
+    background-image: url('../images/尾页/二维码/微信公众号.png');
+}
+
+.qr-codes .qr-code .微信视频号{
+    background-image: url('../images/尾页/二维码/微信视频号.png');
+}
+
+.qr-codes .qr-code .抖音号{
+    background-image: url('../images/尾页/二维码/抖音号.png');
+}
+
+.qr-codes .qr-code .安卓{
+    background-image: url('../images/尾页/二维码/安卓下载.png');
+}
+
+.qr-codes .qr-code h3 {
+    margin-bottom: 20px;
+
+}
+
+.footer .footer-content .company-info {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer-content .power .left {
+    color: #b5b0b0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left:-450px;
+    top:-180px;
+}
+
+.footer .footer-content .power .right {
+    color: #b5b0b0;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    right:-650px;
+    top:-200px;
+}
+
+
+/*#endregion 尾页公司信息样式*/

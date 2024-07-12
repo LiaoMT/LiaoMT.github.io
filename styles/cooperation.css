@@ -1,0 +1,54 @@
+.cooperation-page body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.cooperation-page .container {
+    margin-top: 80px;
+    /* 添加上边距，避免内容与导航栏重叠 */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.cooperation-page .image {
+    margin-right: 20vw;
+}
+.cooperation-page .image img {
+    width: 40vw;
+    height: auto;
+}
+.cooperation-page .content {
+    max-width: 400px;
+}
+.cooperation-page .content h1 {
+    color: #007bff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.cooperation-page .content p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.cooperation-page .content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cooperation-page .content .button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
