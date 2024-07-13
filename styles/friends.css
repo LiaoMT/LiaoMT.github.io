@@ -3,7 +3,7 @@ body .friends {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+
     align-items: stretch;
 }
 
@@ -31,9 +31,9 @@ body .friends {
 }
 
 .partners-logos .logo {
-    width: 230px;
+    width:540px;
 
-    height: 170px;
+    height: 240px;
 
     background-size: contain;
 
@@ -41,7 +41,30 @@ body .friends {
 
     background-position: center;
 
-    margin: 10px;
+    margin: 2px;
+
+
+}
+
+.partners-logos2 {
+    display: flex;
+    justify-content: center;
+    padding: 0% 23%;
+}
+
+.partners-logos2 .logo {
+    width:540px;
+
+    height: 240px;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    margin: 2px;
+
 
 }
 
@@ -58,272 +81,12 @@ body .friends {
     background-image: url('../images/partner_icon (3).png');
 }
 
-.partners-logos .logo4 {
+.partners-logos2 .logo4 {
     background-image: url('../images/partner_icon (4).png');
 }
 
-.partners-logos .logo5 {
+.partners-logos2 .logo5 {
     background-image: url('../images/partner_icon (5).png');
 }
 
 
-
-/*#region 尾页公司信息样式*/
-.footer {
-    background-color: #333;
-    color: #fff;
-    margin-top: auto;
-    top:-50px;
-}
-
-.footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.footer .container {
-    position: relative;
-    height: 120px;
-    /* Adjust the container height as needed */
-    width: 100%;
-    /* Adjust the container width as needed */
-}
-
-
-.footer .footer-content div {
-    margin: 10px 0;
-}
-
-.footer .logo {
-    width: 70px;
-    /* 设置宽度 */
-    height: 70px;
-    /* 设置高度 */
-    background-image: url("../images/logo.png");
-    /* 背景图片 */
-    background-size: contain;
-    /* 使图片适应容器大小 */
-    background-repeat: no-repeat;
-    /* 防止图片重复 */
-    position: absolute;
-    /* 绝对定位 */
-    left: 60px;
-    /* 调整距离左侧的距离 */
-}
-
-.horizontal-line {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.712);
-    /* Change this to your desired color */
-    height: 0;
-    width: 95%;
-    /* Adjust the width as needed */
-    position: absolute;
-    left: 50%;
-    /* 将左边缘移动到容器的 50% 位置 */
-    transform: translateX(-50%);
-    /* 将线的中点对齐到容器的 50% 位置 */
-}
-
-.horizontal-line.top {
-    top: 25px;
-    /* Set the top position */
-}
-
-.horizontal-line.mid {
-    top: 280px;
-    /* Set the bottom position */
-}
-
-.horizontal-line.bottom {
-    top: 560px;
-    /* Set the bottom position */
-}
-
-.vertical-line {
-    border-left: 1px solid rgba(255, 255, 255, 0.712);
-    /* Change this to your desired color */
-    height: 255px;
-    /* Adjust the height as needed */
-    position: absolute;
-}
-
-.vertical-line.left {
-    left: 1000px;
-    top:23px;
-    /* Set the left position */
-}
-
-.vertical-line.right {
-    right: 60px;
-    top:23px;
-    /* Set the right position */
-}
-
-.footer .footer-content .social-icons {
-    position: relative;
-    height: 40px;
-    /* Adjust the container height as needed */
-    width: 40%;
-    /* Adjust the container width as needed */
-    left: 100px;
-    bottom: 25px;
-}
-
-.footer .footer-content .social-icons .fa {
-    width: 30px;
-    /* 设置宽度 */
-    height: 30px;
-    /* 设置高度 */
-    background-size: contain;
-    /* 使图片适应容器大小 */
-    background-repeat: no-repeat;
-    /* 防止图片重复 */
-    position: absolute;
-    /* 绝对定位 */
-
-}
-
-.footer .footer-content .social-icons .微博 {
-    background-image: url("../images/尾页/超链接/微博.png");
-    right: 40px;
-    top: 40px;
-}
-.footer .footer-content .social-icons .微信 {
-    background-image: url("../images/尾页/超链接/微信.png");
-    right: 0px;
-    top: 40px;
-}
-.footer .footer-content .social-icons .抖音 {
-    background-image: url("../images/尾页/超链接/抖音.png");
-    right: -40px;
-    top: 40px;
-}
-.footer .footer-content .social-icons .小红书 {
-    background-image: url("../images/尾页/超链接/小红书.png");
-    right: -80px;
-    top: 40px;
-}
-.footer .footer-content .social-icons .哔哩哔哩 {
-    background-image: url("../images/尾页/超链接/B站.png");
-    right: -120px;
-    top: 40px;
-}
-
-
-.footer .footer-content div h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-
-}
-
-.message {
-    display: flex;
-    justify-content: space-around; /* 子元素在主轴上均匀分布 */
-    flex-wrap: wrap;
-    position: relative; /* 相对于其正常位置定位 */
-    bottom: 350px; /* 从正常位置向下移动 */
-    margin-top: 20px; /* 与上一个元素的间距 */
-    margin-bottom: 20px; /* 与下一个元素的间距 */
-    width: 100%; /* 宽度 */
-}
-
-.footer .footer-content div p {
-    margin: 5px 0;
-    color: #cbcbcb;
-}
-
-.qr-codes {
-    display: flex;
-
-    justify-content: space-around;
-
-    align-items: flex-start;
-
-    gap: 40px;
-    margin: 30px;
-    position: relative; /* 相对于其正常位置定位 */
-    top: 150px; /* 从正常位置向下移动 */
-
-}
-
-.qr-codes .qr-code {
-    text-align: center;
-
-    margin: 0 30px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.qr-codes .qr-image {
-    width: 120px;
-
-    height: 120px;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    margin-top: 20px;
-
-    margin: 20px;
-}
-
-
-.qr-codes .qr-code .微信公众号 {
-    background-image: url('../images/尾页/二维码/微信公众号.png');
-}
-
-.qr-codes .qr-code .微信视频号{
-    background-image: url('../images/尾页/二维码/微信视频号.png');
-}
-
-.qr-codes .qr-code .抖音号{
-    background-image: url('../images/尾页/二维码/抖音号.png');
-}
-
-.qr-codes .qr-code .安卓{
-    background-image: url('../images/尾页/二维码/安卓下载.png');
-}
-
-.qr-codes .qr-code h3 {
-    margin-bottom: 20px;
-
-}
-
-.footer .footer-content .company-info {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer .footer-content .power .left {
-    color: #b5b0b0;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    left:-450px;
-    top:-180px;
-}
-
-.footer .footer-content .power .right {
-    color: #b5b0b0;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    right:-650px;
-    top:-200px;
-}
-
-
-/*#endregion 尾页公司信息样式*/
