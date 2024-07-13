@@ -76,9 +76,9 @@ padding-top: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
     /* 设置宽度 */
-    height: 100px;
+    height: 135px;
     /* 设置高度 */
     background-image: url("../images/公司介绍/背景元素.png");
     /* 背景图片 */
