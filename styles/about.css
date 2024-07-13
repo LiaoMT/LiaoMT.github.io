@@ -9,7 +9,7 @@
     width: 100%;
 padding-bottom: 5vw;
 padding-top: 3vw;
-    padding-left: 8%;
+    padding-left: 2%;
     padding-right: 8%;
     box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ padding-top: 3vw;
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    padding-left: 8%;
+    padding-left: 2%;
     padding-bottom: 5%;
 }
 
@@ -139,7 +139,7 @@ padding-top: 3vw;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
     position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:10vw;  
+    left:4vw;  
 }
 
 .about-page .container2 .member_程健_img{
@@ -157,7 +157,7 @@ padding-top: 3vw;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
     position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:55vw; 
+    left:52vw; 
 }
 
 .about-page .container2 .member_靳卿_img{
@@ -175,7 +175,7 @@ padding-top: 3vw;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
     position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:10vw; 
+    left:4vw; 
 }
 
 .about-page .container2 .member_梅祖嵩_img{
@@ -193,5 +193,5 @@ padding-top: 3vw;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
     position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:55vw; 
+    left:52vw; 
 }
