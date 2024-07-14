@@ -50,21 +50,6 @@ padding-top: 3vw;
     margin-bottom: 20px;
 }
 
-.about-page .image-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    /* 设置宽度 */
-    height: 400px;
-    /* 设置高度 */
-    background-image: url("../images/Introduction Image.png");
-    /* 背景图片 */
-    background-size: contain;
-    /* 使图片适应容器大小 */
-    background-repeat: no-repeat;
-}
 
 .about-page .image-section img {
     max-width: 100%;
@@ -80,7 +65,7 @@ padding-top: 3vw;
     /* 设置宽度 */
     height: 135px;
     /* 设置高度 */
-    background-image: url("../images/公司介绍/背景元素.png");
+    background-image: url("../images/公司介绍/背景元素.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
@@ -133,7 +118,7 @@ padding-top: 3vw;
     /* 设置宽度 */
     height: 56vh;
     /* 设置高度 */
-    background-image: url("../images/公司介绍/核心团队/曾德志照片.png");
+    background-image: url("../images/公司介绍/核心团队/曾德志照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
@@ -151,7 +136,7 @@ padding-top: 3vw;
     /* 设置宽度 */
     height: 56vh;
     /* 设置高度 */
-    background-image: url("../images/公司介绍/核心团队/程健照片.png");
+    background-image: url("../images/公司介绍/核心团队/程健照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
@@ -169,7 +154,7 @@ padding-top: 3vw;
     /* 设置宽度 */
     height: 56vh;
     /* 设置高度 */
-    background-image: url("../images/公司介绍/核心团队/靳卿照片.png");
+    background-image: url("../images/公司介绍/核心团队/靳卿照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
@@ -187,7 +172,7 @@ padding-top: 3vw;
     /* 设置宽度 */
     height: 56vh;
     /* 设置高度 */
-    background-image: url("../images/公司介绍/核心团队/梅祖嵩照片.png");
+    background-image: url("../images/公司介绍/核心团队/梅祖嵩照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
