@@ -41,7 +41,7 @@
     align-items: center;
    width: 100vw;
     /* 设置宽度 */
-    height: 100vh;
+    padding-top: calc(100vw / 1.96);
     /* 设置高度 */
     background-image: url("../images/应用/安卓.jpg");
     /* 背景图片 */
@@ -58,7 +58,7 @@
     align-items: center;
    width: 60vw;
     /* 设置宽度 */
-    height: 60vh;
+    padding-top: calc(60vw / 1.96);
     /* 设置高度 */
     background-image: url("../images/应用/ios.jpg");
     /* 背景图片 */

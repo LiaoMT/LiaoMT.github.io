@@ -7,8 +7,8 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-padding-bottom: 5vw;
-padding-top: 3vw;
+    padding-bottom: 5vw;
+    padding-top: 3vw;
     padding-left: 2%;
     padding-right: 8%;
     box-sizing: border-box;
@@ -87,18 +87,20 @@ padding-top: 3vw;
 }
 
 .about-page .container2 .text-section p {
-    font-size: 16px;  /* 设置段落的字号大小 */
-    line-height: 1; /* 设置段落的行距，这里使用了默认的行距倍数 */
-  }
+    font-size: 16px;
+    /* 设置段落的字号大小 */
+    line-height: 1;
+    /* 设置段落的行距，这里使用了默认的行距倍数 */
+}
 
-.about-page .container2  .member_back{
+.about-page .container2 .member_back {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 3.9vw;
     /* 设置宽度 */
-    height: 58vh;
+    padding-top: calc(16vw / 0.56);
     /* 设置高度 */
     background-image: url("../images/公司介绍/核心团队/背景.png");
     /* 背景图片 */
@@ -106,77 +108,81 @@ padding-top: 3vw;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
     position: relative;
-    top:20px;
+    top: 20px;
 }
 
-.about-page .container2 .member_曾德志_img{
+.about-page .container2 .member_曾德志_img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width:15.5vw;
+    width: 15.5vw;
     /* 设置宽度 */
-    height: 56vh;
+    padding-top: calc(15.5vw / 0.56);
     /* 设置高度 */
     background-image: url("../images/公司介绍/核心团队/曾德志照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
-    position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:4vw;  
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 4vw;
 }
 
-.about-page .container2 .member_程健_img{
+.about-page .container2 .member_程健_img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-     width:15.5vw;
+    width: 15.5vw;
     /* 设置宽度 */
-    height: 56vh;
+    padding-top: calc(15.5vw / 0.56);
     /* 设置高度 */
     background-image: url("../images/公司介绍/核心团队/程健照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
-    position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:52vw; 
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 52vw;
 }
 
-.about-page .container2 .member_靳卿_img{
+.about-page .container2 .member_靳卿_img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-     width:15.5vw;
+    width: 15.5vw;
     /* 设置宽度 */
-    height: 56vh;
+    padding-top: calc(15.5vw / 0.56);
     /* 设置高度 */
     background-image: url("../images/公司介绍/核心团队/靳卿照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
-    position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:4vw; 
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 4vw;
 }
 
-.about-page .container2 .member_梅祖嵩_img{
+.about-page .container2 .member_梅祖嵩_img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-     width:15.5vw;
+    width: 15.5vw;
     /* 设置宽度 */
-    height: 56vh;
+    padding-top: calc(15.5vw / 0.56);
     /* 设置高度 */
     background-image: url("../images/公司介绍/核心团队/梅祖嵩照片.jpg");
     /* 背景图片 */
     background-size: 100% 100%;
     /* 使图片适应容器大小 */
     background-repeat: no-repeat;
-    position: absolute; /* 绝对定位，使元素可以重叠 */
-    left:52vw; 
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 52vw;
 }

@@ -50,7 +50,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面1.jpg");
     /* 背景图片 */
@@ -67,7 +67,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面2.jpg");
     /* 背景图片 */
@@ -85,7 +85,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面3.jpg");
     /* 背景图片 */
@@ -103,7 +103,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面4.jpg");
     /* 背景图片 */
@@ -121,7 +121,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面5.jpg");
     /* 背景图片 */
@@ -139,7 +139,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面6.jpg");
     /* 背景图片 */
@@ -156,7 +156,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/当前发售子界面/当前发售子界面7.jpg");
     /* 背景图片 */
@@ -174,7 +174,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+    padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (1).jpg");
     /* 背景图片 */
@@ -191,7 +191,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (2).jpg");
     /* 背景图片 */
@@ -208,7 +208,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (3).jpg");
     /* 背景图片 */
@@ -225,7 +225,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (4).jpg");
     /* 背景图片 */
@@ -242,7 +242,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (5).jpg");
     /* 背景图片 */
@@ -259,7 +259,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (6).jpg");
     /* 背景图片 */
@@ -276,7 +276,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (7).jpg");
     /* 背景图片 */
@@ -293,7 +293,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (8).jpg");
     /* 背景图片 */
@@ -310,7 +310,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (9).jpg");
     /* 背景图片 */
@@ -327,7 +327,7 @@
     align-items: center;
    width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (10).jpg");
     /* 背景图片 */
@@ -344,7 +344,7 @@
     align-items: center;
     width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (11).jpg");
     /* 背景图片 */
@@ -362,7 +362,7 @@
     align-items: center;
     width: 24.8vw;
     /* 设置宽度 */
-    height: 33vh;
+   padding-top: calc(24.8vw / 1.56); /* 宽高比是1.56*/
     /* 设置高度 */
     background-image: url("../images/IP/IP (12).jpg");
     /* 背景图片 */
