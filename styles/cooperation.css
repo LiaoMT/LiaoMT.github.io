@@ -1,3 +1,23 @@
+ /*#region 移动端和pc端显示不同内容，根据屏幕长宽比判断，横屏用pc端，竖屏用移动端*/
+ @media screen and (max-aspect-ratio: 1/1) {
+    .block.PC {
+        display: none;
+        /* 在移动端隐藏 */
+    }
+}
+
+/* PC端样式*/
+@media screen and (min-aspect-ratio: 1/1) {
+    .block.mobile-only {
+        display: none;
+        /* 在PC端隐藏 */
+    }
+}
+
+/*#endregion*/
+
+
+
 .cooperation-page body {
     font-family: Arial, sans-serif;
     margin: 0;

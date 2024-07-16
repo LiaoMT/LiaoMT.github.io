@@ -14,313 +14,329 @@
 <link href="styles/about.css" rel="stylesheet" />
 
 <body>
-    <!-- 导航栏-->
-    <div class="navbar">
-        <div class="logo"></div>
-  
-        <div class="menu">
-            <a href="index.html">首页</a>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <a href="about.html">公司介绍</a>
-                </button>
-                <div class="dropdown-content">
-                    <a href="about.html">公司简介</a>
-                    <a href="about.html">核心团队</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <a href="news.html">摩际要闻</a>
-                </button>
-                <div class="dropdown-content">
-                    <a href="news.html">公司新闻</a>
-                    <a href="news.html">行业资讯</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn"><a href="hotIP.html">热门IP</a></button>
-                <div class="dropdown-content">
-                    <a href="hotIP.html">当前发售</a>
-                    <a href="hotIP.html">在研IP</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn"><a href="app.html">平台应用</a></button>
-                <div class="dropdown-content">
-                    <a href="app.html">安卓系统下载入口</a>
-                    <a href="app.html">IOS系统下载入口</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">
-                    <a href="cooperation.html">人才招募</a>
-                </button>
-                <div class="dropdown-content">
-                    <a href="cooperation.html">IP经纪人招募</a>
-                    <a href="cooperation.html">城市合伙人招募</a>
-                </div>
-            </div>
-        </div>
-        <div class="separator"></div>
-        <div class="contact">
-            <i class="fas fa-phone-alt"></i>
-            <span>13545094353</span>
-        </div>
-  
-      
-    </div>
-    <!-- 常驻图标-->
-    <div class="floating-icon1">
-        <span> <img src="images/首页/常驻图标/1.png" alt="QR Code" /></span>
-        <img src="images/尾页/二维码/安卓下载.png" alt="QR Code" />
-    </div>
-    <div class="floating-icon2">
-        <span> <img src="images/首页/常驻图标/2.png" alt="QR Code" /></span>
-        <img src="images/首页/常驻图标/电话.png" alt="QR Code" />
-    </div>
-    <div class="floating-icon3">
-        <span> <img src="images/首页/常驻图标/3.png" alt="QR Code" /></span>
-        <img src="images/首页/常驻图标/电话.png" alt="QR Code" />
-    </div>
-    <div class="floating-icon4">
-        <span> <img src="images/首页/常驻图标/4.png" alt="QR Code" /></span>
-    </div>
 
+    <!-- pc端网页内容-->
+    <div class="block PC">
 
-
-    <!-- 轮播图窗口-->
-    <div class="slider">
-        <div class="slides">
-            <div class="slide">
-                <img src="images/首页/背景/004.jpg" alt="Image 1" />
-            </div>
-            <div class="slide">
-                <img src="images/首页/背景/002.jpg" alt="Image 2" />
-            </div>
-            <div class="slide">
-                <img src="images/首页/背景/003.jpg" alt="Image 3" />
-            </div>
-            <div class="slide">
-                <img src="images/首页/背景/001.jpg" alt="Image 3" />
-            </div>
-        </div>
-        <!-- 添加图标 -->
-        <div class="p_scrool"><span>scroll down</span><i></i></div>
-        <div class="nav-buttons">
-            <button class="nav-button" id="prev">&#10094;</button>
-            <button class="nav-button" id="next">&#10095;</button>
-        </div>
-        <div class="dots" id="dots"></div>
-    </div>
-
-    <!-- 轮播图脚本-->
-    <script>
-        let currentIndex = 0;
-        const slides = document.querySelector(".slides");
-        const slide = document.querySelectorAll(".slide");
-        const totalSlides = slide.length;
-
-        const dotsContainer = document.getElementById("dots");
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement("span");
-            dot.classList.add("dot");
-            dotsContainer.appendChild(dot);
-        }
-        const dots = document.querySelectorAll(".dot");
-
-        document.getElementById("next").addEventListener("click", () => {
-            moveToNextSlide();
-        });
-
-        document.getElementById("prev").addEventListener("click", () => {
-            moveToPrevSlide();
-        });
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => {
-                moveToSlide(index);
-            });
-        });
-
-        const updateDots = () => {
-            dots.forEach((dot) => dot.classList.remove("active"));
-            dots[currentIndex].classList.add("active");
-        };
-
-        const moveToNextSlide = () => {
-            if (currentIndex === totalSlides - 1) {
-                currentIndex = 0;
-            } else {
-                currentIndex++;
-            }
-            updateSlidePosition();
-        };
-
-        const moveToPrevSlide = () => {
-            if (currentIndex === 0) {
-                currentIndex = totalSlides - 1;
-            } else {
-                currentIndex--;
-            }
-            updateSlidePosition();
-        };
-
-        const moveToSlide = (index) => {
-            currentIndex = index;
-            updateSlidePosition();
-        };
-
-        const updateSlidePosition = () => {
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-            updateDots();
-        };
-
-        updateDots();
-
-        setInterval(() => {
-            moveToNextSlide();
-        }, 3000);
-    </script>
-
-    <!-- 公司简介-->
-    </div>
-    <div class="about-page">
-        <div class="container">
-            <div class="text-section">
-                <h1>公司简介</h1>
-                <hr />
-                <p>
-                    摩际漫境文化科技（武汉）有限公司是一家专注于国家文化数字化战略落地的一站式开发运营型平台，摩际漫境坚持“故事，始于眼前，归于现实”，秉承“文化兴则国运兴，一个IP兴一座城”的战略眼光，立志打造中国区域特色文化IP数字游艺新生态。团队通过4年技术沉淀，在2023年陆续设计开发湖北境内10余个沉浸式区域特色文化IP。目前首个总投资2.5亿元占地80亩的荆楚特色大型IP《梦回大楚·千古绝响》正式投入落地开发，项目建成能够实现年营收7.65亿元，年利润3.5亿元，创造年度税收1亿元+，创造核心就业岗位1000个+，周边就业岗位5000个+，将形成区域特色沉浸式文商旅数实融合新标杆。
-                </p>
-                <p>
-                    公司为了实现内容和流量极大融通，量身开发摩际漫境APP及强大人工智能支撑的运营后台，同时平台数据将与国家文化大数据平台及各地文化产权交易中心全面打通，实现与国家战略大同步，与区域文化共发展之格局。摩际漫境将通过内容虚实相生，全面释放区域特色文化价值，通过运营数实融合，深度赋能全域实体经济发展。
-                </p>
-                <div class="button-container">
-                    <a href="#">了解更多 →</a>
-                </div>
-            </div>
-
-            <video style="width: 39%; height: auto;" controls poster="images/公司介绍/视频封面.png">
-                <source src="images/公司介绍/播放视频.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-
-        </div>
-        <div class="image-back"></div>
-    </div>
-
-    <!-- 合作伙伴-->
-    <div class="partners-section">
-        <h1>合作伙伴</h1>
-        <h2>COOPERATIVE PARTNER</h2>
-        <div class="partners-logos">
-            <div class="logo logo1"></div>
-            <div class="logo logo2"></div>
-            <div class="logo logo3"></div>
-        </div>
-        <div class="partners-logos2">
-            <div class="logo logo4"></div>
-            <div class="logo logo5"></div>
-        </div>
-    </div>
-
-    <!-- 尾页-->
-    <div class="footer">
-        <div class="footer-content">
-            <!-- 公司logo-->
+        <!-- 导航栏-->
+        <div class="navbar">
             <div class="logo"></div>
-            <!-- 社交媒体-->
-            <div class="social-icons">
-                <a href="https://s.weibo.com/user?q=%E6%91%A9%E9%99%85%E6%BC%AB%E5%A2%83&Refer=weibo_user">
-                    <div class="fa 微博"></div>
-                </a>
-                <a href="https://wx.qq.com/">
-                    <div class="fa 微信"></div>
-                </a>
-                <a
-                    href="https://www.douyin.com/user/MS4wLjABAAAAvHzQeSfzYGLIvvTJHgSxUq4am_bJ-C6x4L43-jmoeosNs5vx1qAfgUTNlhqW3BD6">
-                    <div class="fa 抖音"></div>
-                </a>
-                <a href="https://www.xiaohongshu.com/explore">
-                    <div class="fa 小红书"></div>
-                </a>
-                <a href="https://space.bilibili.com/536704556">
-                    <div class="fa 哔哩哔哩"></div>
-                </a>
+
+            <div class="menu">
+                <a href="index.html">首页</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="about.html">公司介绍</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about.html">公司简介</a>
+                        <a href="about.html">核心团队</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="news.html">摩际要闻</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="news.html">公司新闻</a>
+                        <a href="news.html">行业资讯</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="hotIP.html">热门IP</a></button>
+                    <div class="dropdown-content">
+                        <a href="hotIP.html">当前发售</a>
+                        <a href="hotIP.html">在研IP</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="app.html">平台应用</a></button>
+                    <div class="dropdown-content">
+                        <a href="app.html">安卓系统下载入口</a>
+                        <a href="app.html">IOS系统下载入口</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="cooperation.html">人才招募</a>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="cooperation.html">IP经纪人招募</a>
+                        <a href="cooperation.html">城市合伙人招募</a>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="contact">
+                <i class="fas fa-phone-alt"></i>
+                <span>13545094353</span>
             </div>
 
+
+        </div>
+        <!-- 常驻图标-->
+        <div class="floating-icon1">
+            <span> <img src="images/首页/常驻图标/1.png" alt="QR Code" /></span>
+            <img src="images/尾页/二维码/安卓下载.png" alt="QR Code" />
+        </div>
+        <div class="floating-icon2">
+            <span> <img src="images/首页/常驻图标/2.png" alt="QR Code" /></span>
+            <img src="images/首页/常驻图标/电话.png" alt="QR Code" />
+        </div>
+        <div class="floating-icon3">
+            <span> <img src="images/首页/常驻图标/3.png" alt="QR Code" /></span>
+            <img src="images/首页/常驻图标/电话.png" alt="QR Code" />
+        </div>
+        <div class="floating-icon4">
+            <span> <img src="images/首页/常驻图标/4.png" alt="QR Code" /></span>
+        </div>
+
+
+
+        <!-- 轮播图窗口-->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/首页/背景/004.jpg" alt="Image 1" />
+                </div>
+                <div class="slide">
+                    <img src="images/首页/背景/002.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                    <img src="images/首页/背景/003.jpg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                    <img src="images/首页/背景/001.jpg" alt="Image 3" />
+                </div>
+            </div>
+            <!-- 添加图标 -->
+            <div class="p_scrool"><span>scroll down</span><i></i></div>
+            <div class="nav-buttons">
+                <button class="nav-button" id="prev">&#10094;</button>
+                <button class="nav-button" id="next">&#10095;</button>
+            </div>
+            <div class="dots" id="dots"></div>
+        </div>
+
+        <!-- 轮播图脚本-->
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelector(".slides");
+            const slide = document.querySelectorAll(".slide");
+            const totalSlides = slide.length;
+
+            const dotsContainer = document.getElementById("dots");
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dotsContainer.appendChild(dot);
+            }
+            const dots = document.querySelectorAll(".dot");
+
+            document.getElementById("next").addEventListener("click", () => {
+                moveToNextSlide();
+            });
+
+            document.getElementById("prev").addEventListener("click", () => {
+                moveToPrevSlide();
+            });
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    moveToSlide(index);
+                });
+            });
+
+            const updateDots = () => {
+                dots.forEach((dot) => dot.classList.remove("active"));
+                dots[currentIndex].classList.add("active");
+            };
+
+            const moveToNextSlide = () => {
+                if (currentIndex === totalSlides - 1) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+                updateSlidePosition();
+            };
+
+            const moveToPrevSlide = () => {
+                if (currentIndex === 0) {
+                    currentIndex = totalSlides - 1;
+                } else {
+                    currentIndex--;
+                }
+                updateSlidePosition();
+            };
+
+            const moveToSlide = (index) => {
+                currentIndex = index;
+                updateSlidePosition();
+            };
+
+            const updateSlidePosition = () => {
+                slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+                updateDots();
+            };
+
+            updateDots();
+
+            setInterval(() => {
+                moveToNextSlide();
+            }, 3000);
+        </script>
+
+        <!-- 公司简介-->
+
+        <div class="about-page">
             <div class="container">
-                <hr class="horizontal-line top" />
-                <hr class="horizontal-line mid" />
-                <hr class="horizontal-line bottom" />
-                <div class="vertical-line left"></div>
-                <div class="vertical-line right"></div>
-            </div>
-            <div class="qr-codes">
-                <div class="qr-code">
-                    <h3>安卓系统APP下载</h3>
-                    <div class="qr-image 安卓"></div>
-                </div>
-                <div class="qr-code">
-                    <h3>企业公众号</h3>
-                    <div class="qr-image 微信公众号"></div>
-                </div>
-                <div class="qr-code">
-                    <h3>企业视频号</h3>
-                    <div class="qr-image 微信视频号"></div>
-                </div>
-                <div class="qr-code">
-                    <h3>企业抖音号</h3>
-                    <div class="qr-image 抖音号"></div>
-                </div>
-            </div>
-            <div class="message">
-                <a href="about.html"><div>
-                    <h3>公司介绍</h3>
-                    <p>公司简介</p>
-                    <p>核心团队</p>
-                </div>
-                </a>
-                <a href="news.html"><div></div>
-                <div>
-                    <h3>摩际要闻</h3>
-                    <p>公司新闻</p>
-                    <p>行业资讯</p>
-                </div>
-            </a>
-                <a href="hotIP.html"><div></div>
-                <div>
-                    <h3>热门IP</h3>
-                    <p>当前发售</p>
-                    <p>在研IP</p>
-                </div>
-            </a>
-                <a href="app.html"><div></div>
-                <div>
-                    <h3>平台应用</h3>
-                    <p>安卓系统下载</p>
-                    <p>IOS系统下载</p>
-                </div>
-            </a>
-                <div class="company-info">
-                    <h3>摩际漫境文化科技（武汉）有限公司</h3>
-                    <p>合作电话: 13545094353</p>
-                    <p>企业邮箱: jinqing@mojimj.com</p>
+                <div class="text-section">
+                    <h1>公司简介</h1>
+                    <hr />
                     <p>
-                        公司地址:</p>
-                    <p> 武汉市东湖新技术开发区流芳路通城离岸科创中心206室</p>
-                    <p>武汉市东湖新技术开发区汤逊湖北路星火数字科创中心19楼</p>
-
-
+                        摩际漫境文化科技（武汉）有限公司是一家专注于国家文化数字化战略落地的一站式开发运营型平台，摩际漫境坚持“故事，始于眼前，归于现实”，秉承“文化兴则国运兴，一个IP兴一座城”的战略眼光，立志打造中国区域特色文化IP数字游艺新生态。团队通过4年技术沉淀，在2023年陆续设计开发湖北境内10余个沉浸式区域特色文化IP。目前首个总投资2.5亿元占地80亩的荆楚特色大型IP《梦回大楚·千古绝响》正式投入落地开发，项目建成能够实现年营收7.65亿元，年利润3.5亿元，创造年度税收1亿元+，创造核心就业岗位1000个+，周边就业岗位5000个+，将形成区域特色沉浸式文商旅数实融合新标杆。
+                    </p>
+                    <p>
+                        公司为了实现内容和流量极大融通，量身开发摩际漫境APP及强大人工智能支撑的运营后台，同时平台数据将与国家文化大数据平台及各地文化产权交易中心全面打通，实现与国家战略大同步，与区域文化共发展之格局。摩际漫境将通过内容虚实相生，全面释放区域特色文化价值，通过运营数实融合，深度赋能全域实体经济发展。
+                    </p>
+                    <div class="button-container">
+                        <a href="#">了解更多 →</a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="power">
-                <p class="left">版权所有@摩际漫境文化科技（武汉）有限公司</p>
-                <p class="right">鄂ICP备2024057169号-1 营业执照 SEO</p>
+                <video style="width: 39%; height: auto;" controls poster="images/公司介绍/视频封面.png">
+                    <source src="images/公司介绍/播放视频.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+            <div class="image-back"></div>
+        </div>
+
+        <!-- 合作伙伴-->
+        <div class="partners-section">
+            <h1>合作伙伴</h1>
+            <h2>COOPERATIVE PARTNER</h2>
+            <div class="partners-logos">
+                <div class="logo logo1"></div>
+                <div class="logo logo2"></div>
+                <div class="logo logo3"></div>
+            </div>
+            <div class="partners-logos2">
+                <div class="logo logo4"></div>
+                <div class="logo logo5"></div>
             </div>
         </div>
+
+        <!-- 尾页-->
+        <div class="footer">
+            <div class="footer-content">
+                <!-- 公司logo-->
+                <div class="logo"></div>
+                <!-- 社交媒体-->
+                <div class="social-icons">
+                    <a href="https://s.weibo.com/user?q=%E6%91%A9%E9%99%85%E6%BC%AB%E5%A2%83&Refer=weibo_user">
+                        <div class="fa 微博"></div>
+                    </a>
+                    <a href="https://wx.qq.com/">
+                        <div class="fa 微信"></div>
+                    </a>
+                    <a
+                        href="https://www.douyin.com/user/MS4wLjABAAAAvHzQeSfzYGLIvvTJHgSxUq4am_bJ-C6x4L43-jmoeosNs5vx1qAfgUTNlhqW3BD6">
+                        <div class="fa 抖音"></div>
+                    </a>
+                    <a href="https://www.xiaohongshu.com/explore">
+                        <div class="fa 小红书"></div>
+                    </a>
+                    <a href="https://space.bilibili.com/536704556">
+                        <div class="fa 哔哩哔哩"></div>
+                    </a>
+                </div>
+
+                <div class="container">
+                    <hr class="horizontal-line top" />
+                    <hr class="horizontal-line mid" />
+                    <hr class="horizontal-line bottom" />
+                    <div class="vertical-line left"></div>
+                    <div class="vertical-line right"></div>
+                </div>
+                <div class="qr-codes">
+                    <div class="qr-code">
+                        <h3>安卓系统APP下载</h3>
+                        <div class="qr-image 安卓"></div>
+                    </div>
+                    <div class="qr-code">
+                        <h3>企业公众号</h3>
+                        <div class="qr-image 微信公众号"></div>
+                    </div>
+                    <div class="qr-code">
+                        <h3>企业视频号</h3>
+                        <div class="qr-image 微信视频号"></div>
+                    </div>
+                    <div class="qr-code">
+                        <h3>企业抖音号</h3>
+                        <div class="qr-image 抖音号"></div>
+                    </div>
+                </div>
+                <div class="message">
+                    <a href="about.html">
+                        <div>
+                            <h3>公司介绍</h3>
+                            <p>公司简介</p>
+                            <p>核心团队</p>
+                        </div>
+                    </a>
+                    <a href="news.html">
+                        <div></div>
+                        <div>
+                            <h3>摩际要闻</h3>
+                            <p>公司新闻</p>
+                            <p>行业资讯</p>
+                        </div>
+                    </a>
+                    <a href="hotIP.html">
+                        <div></div>
+                        <div>
+                            <h3>热门IP</h3>
+                            <p>当前发售</p>
+                            <p>在研IP</p>
+                        </div>
+                    </a>
+                    <a href="app.html">
+                        <div></div>
+                        <div>
+                            <h3>平台应用</h3>
+                            <p>安卓系统下载</p>
+                            <p>IOS系统下载</p>
+                        </div>
+                    </a>
+                    <div class="company-info">
+                        <h3>摩际漫境文化科技（武汉）有限公司</h3>
+                        <p>合作电话: 13545094353</p>
+                        <p>企业邮箱: jinqing@mojimj.com</p>
+                        <p>
+                            公司地址:</p>
+                        <p> 武汉市东湖新技术开发区流芳路通城离岸科创中心206室</p>
+                        <p>武汉市东湖新技术开发区汤逊湖北路星火数字科创中心19楼</p>
+
+
+                    </div>
+                </div>
+
+                <div class="power">
+                    <p class="left">版权所有@摩际漫境文化科技（武汉）有限公司</p>
+                    <p class="right">鄂ICP备2024057169号-1 营业执照 SEO</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 移动端网页内容-->
+    <div class="block mobile-only">
+        <p>这是您想要显示的一段话。</p>
+
     </div>
 </body>
 

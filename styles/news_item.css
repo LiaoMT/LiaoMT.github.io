@@ -1,0 +1,53 @@
+ /*#region 移动端和pc端显示不同内容，根据屏幕长宽比判断，横屏用pc端，竖屏用移动端*/
+ @media screen and (max-aspect-ratio: 1/1) {
+    .block.PC {
+        display: none;
+        /* 在移动端隐藏 */
+    }
+}
+
+/* PC端样式*/
+@media screen and (min-aspect-ratio: 1/1) {
+    .block.mobile-only {
+        display: none;
+        /* 在PC端隐藏 */
+    }
+}
+
+/*#endregion*/
+
+.container{
+    
+    margin-top: 100px;
+    padding: 20px;
+    padding-bottom: 8vw;
+    padding-top: 2vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 水平居中 */
+    justify-content: center; /* 垂直居中 */
+    text-align: center; /* 文本居中 */
+    white-space: pre-wrap; /* 确保空格和换行符被正确处理 */
+}
+
+.container img{
+width: 66vw;
+padding: 20px;
+
+}
+
+.container h1{
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
+.container p{
+    line-height: 1.5;
+    text-align: left;
+    margin-left: auto; /* 左对齐并自动调整右边距 */
+    margin-right: auto; /* 左对齐并自动调整右边距 */
+    width: 70%; /* 使段落宽度占满容器宽度 */
+    font-size: large;
+
+}

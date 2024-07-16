@@ -1,3 +1,22 @@
+ /*#region 移动端和pc端显示不同内容，根据屏幕长宽比判断，横屏用pc端，竖屏用移动端*/
+ @media screen and (max-aspect-ratio: 1/1) {
+    .block.PC {
+        display: none;
+        /* 在移动端隐藏 */
+    }
+}
+
+/* PC端样式*/
+@media screen and (min-aspect-ratio: 1/1) {
+    .block.mobile-only {
+        display: none;
+        /* 在PC端隐藏 */
+    }
+}
+
+/*#endregion*/
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -82,8 +101,7 @@ body {
     margin-right: auto;
 }
 
-
-
+/* 条目前的标识
 .news-categories2 div::before {
     content: '';
     display: inline-block;
@@ -92,6 +110,7 @@ body {
     background-color: #00AEEF;
     margin-right: 10px;
 }
+*/
 
 .button-container {
     display: flex;
@@ -108,33 +127,91 @@ body {
 }
 
 .image-section1 {
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 30vw;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+}
+
+.image-section1 a{
+    text-decoration: none;
+}
+
+.image-section1 a:hover p{
+    color: blue; /* 鼠标悬停时颜色变为蓝色 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+.image-section1 img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 30vw;
 
-    height: 550px;
+    margin-left: 8vw;
+    margin-right: 8vw;
 
-    background-image: url("../images/xc.jpg");
+    background-image: url("../images/新闻1/1.jpg");
 
     background-size: contain;
 
     background-repeat: no-repeat;
 }
+.image-section1 p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+
 
 .image-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:30vw;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.image-section2 a{
+    text-decoration: none;
+}
+
+.image-section2 a:hover p{
+    color: blue; /* 鼠标悬停时颜色变为蓝色 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+.image-section2 img {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 30vw;
 
-    height: 550px;
+    margin-left: 8vw;
+    margin-right: 8vw;
 
-    background-image: url("../images/xx.jpg");
+    background-image: url("../images/新闻2/6.jpg");
 
     background-size: contain;
 
     background-repeat: no-repeat;
+}
+.image-section2 p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
 }
