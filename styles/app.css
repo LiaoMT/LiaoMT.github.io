@@ -71,6 +71,74 @@
     position: relative;
 }
 
+.app-page .安卓下载图1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+    /* 设置宽度 */
+    padding-top: calc(100vw / 1);
+    /* 设置高度 */
+    background-image: url("../images/应用/1.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.app-page .安卓下载图2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+    /* 设置宽度 */
+    padding-top: calc(100vw / 1);
+    /* 设置高度 */
+    background-image: url("../images/应用/2.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.app-page .安卓下载图3{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+    /* 设置宽度 */
+    padding-top: calc(100vw / 1);
+    /* 设置高度 */
+    background-image: url("../images/应用/3.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.app-page .安卓下载图4{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100vw;
+    /* 设置宽度 */
+    padding-top: calc(100vw / 1.186);
+    /* 设置高度 */
+    background-image: url("../images/应用/4.jpg");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: relative;
+}
+
 .app-page .ios下载图{
     flex: 1;
     display: flex;

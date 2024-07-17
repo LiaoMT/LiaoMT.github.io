@@ -72,3 +72,14 @@
     background-color: #000000;
     color: #ffffff;
 }
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .cooperation-page .image img {
+        width: 80vw;
+        height: auto;
+    }
+    .cooperation-page .image {
+        margin-right: 0vw;
+    }
+}
+

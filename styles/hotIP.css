@@ -29,12 +29,12 @@
 }
 
 .hotIP-page .container2 {
-    margin-left: 10vw;
+    margin-left: 3vw;
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80%;
-    padding: 20px;
+    width: 90%;
+    padding: 15px;
     box-sizing: border-box;
 }
 .hotIP-page .container_标题 {

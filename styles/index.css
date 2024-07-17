@@ -474,78 +474,10 @@
  /*#endregion*/
 
 
- /*#region 合作伙伴的样式*/
- body .friends {
-     margin: 0;
-     font-family: Arial, sans-serif;
-     display: flex;
-     flex-direction: column;
-     min-height: 100vh;
-     align-items: stretch;
- }
 
- .partners-section {
-     text-align: center;
-     padding: 50px 0;
-     flex: 1;
- }
-
- .partners-section h1 {
-     font-size: 36px;
-     margin: 0;
- }
-
- .partners-section h2 {
-     font-size: 18px;
-     margin: 10px 0 40px;
-     color: #666;
- }
-
- .partners-logos {
-     display: flex;
-     justify-content: space-between;
-     padding: 0 10%;
- }
-
- .partners-logos .logo {
-     width: 230px;
-
-     height: 170px;
-
-     background-size: contain;
-
-     background-repeat: no-repeat;
-
-     background-position: center;
-
-     margin: 10px;
-
- }
-
-
- .partners-logos .logo1 {
-     background-image: url("../images/partner_icon (1).png");
- }
-
- .partners-logos .logo2 {
-     background-image: url('../images/partner_icon (2).png');
- }
-
- .partners-logos .logo3 {
-     background-image: url('../images/partner_icon (3).png');
- }
-
- .partners-logos .logo4 {
-     background-image: url('../images/partner_icon (4).png');
- }
-
- .partners-logos .logo5 {
-     background-image: url('../images/partner_icon (5).png');
- }
-
- /*#endregion 合作伙伴的样式*/
 
  /*#region 尾页公司信息样式*/
+
  .footer {
      background-color: #333;
      color: #fff;
@@ -573,10 +505,6 @@
      padding-top: 0vw;
  }
 
- .footer, .footer .footer-content {
-     /* 添加边框以查看元素大小 */
- }
-
 
  .footer .footer-content div {
      margin: 10px 0;
@@ -602,10 +530,8 @@
  .horizontal-line {
      border: none;
      border-top: 1px solid rgba(255, 255, 255, 0.712);
-     /* Change this to your desired color */
      height: 0;
      width: 95%;
-     /* Adjust the width as needed */
      position: absolute;
      left: 50%;
      /* 将左边缘移动到容器的 50% 位置 */
@@ -615,45 +541,36 @@
 
  .horizontal-line.top {
      top: 25px;
-     /* Set the top position */
  }
 
  .horizontal-line.mid {
      top: 280px;
-     /* Set the bottom position */
  }
 
  .horizontal-line.bottom {
      top: 500px;
-     /* Set the bottom position */
  }
 
  .vertical-line {
      border-left: 1px solid rgba(255, 255, 255, 0.712);
-     /* Change this to your desired color */
      height: 255px;
-     /* Adjust the height as needed */
      position: absolute;
  }
 
  .vertical-line.left {
      left: 67vw;
      top: 23px;
-     /* Set the left position */
  }
 
  .vertical-line.right {
      right: 60px;
      top: 23px;
-     /* Set the right position */
  }
 
  .footer .footer-content .social-icons {
      position: relative;
      height: 40px;
-     /* Adjust the container height as needed */
      width: 40%;
-     /* Adjust the container width as needed */
      left: 100px;
      bottom: 25px;
  }
@@ -859,3 +776,166 @@
 
 
  /*#endregion 尾页公司信息样式*/
+
+
+
+ /*移动端元素样式*/
+
+ /*#region 移动端导航页样式*/
+ .block.mobile-only .menu {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     display: none;
+     position: fixed;
+     /* 改为绝对定位 */
+     top: 80px;
+     /* 根据需要调整位置 */
+     right: 10px;
+     /* 根据需要调整位置 */
+     z-index: 1000;
+     background-color: #fff;
+     /* 确保菜单有背景颜色以覆盖其他元素 */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     /* 添加阴影以提高可见性 */
+ }
+
+ .block.mobile-only .menu-item {
+     padding: 15px 20px;
+     background-color: #fff;
+     border-bottom: 1px solid #e0e0e0;
+     position: relative;
+ }
+
+ .block.mobile-only .menu-item a {
+     text-decoration: none;
+     color: #000;
+     font-size: 18px;
+     display: block;
+ }
+
+ .block.mobile-only .menu-item:last-child {
+     border-bottom: none;
+ }
+
+ .block.mobile-only .menu-item a::after {
+     content: '>';
+     position: absolute;
+     right: 20px;
+     font-size: 18px;
+     color: #00aaff;
+ }
+
+ .block.mobile-only .show {
+     display: block;
+ }
+
+ #expandButton {
+     padding: 10px 20px;
+     background-color: #00aaff;
+     color: #fff;
+     border: none;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius: 5px;
+     position: fixed;
+     /* 绝对定位 */
+     top: 30px;
+     /* 距离顶部10px */
+     right: 10px;
+     /* 距离右侧10px */
+     z-index: 1000;
+ }
+
+ /*#endregion*/
+
+ /* #region 移动端轮播图及尾页样式 */
+
+ @media screen and (max-aspect-ratio: 1/1) {
+     .slider {
+         position: relative;
+         width: 100%;
+         max-width: 99vw;
+         height: auto;
+         overflow: hidden;
+         border-radius: 10px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+         margin-top: 120px;
+     }
+
+     .p_scrool {
+         display: none;
+     }
+
+     .block.mobile-only .footer .logo {
+         width: 70px;
+         /* 设置宽度 */
+         height: 70px;
+         /* 设置高度 */
+         background-image: url("../images/logo.png");
+         /* 背景图片 */
+         background-size: contain;
+         /* 使图片适应容器大小 */
+         background-repeat: no-repeat;
+         /* 防止图片重复 */
+         position: absolute;
+         /* 绝对定位 */
+         left: 20px;
+         /* 调整距离左侧的距离 */
+     }
+
+     .block.mobile-only .horizontal-line.top {
+         top: 70px;
+     }
+
+     .block.mobile-only .horizontal-line.mid {
+         top: 320px;
+     }
+
+     .block.mobile-only .footer .footer-content .company-info {
+         width: 600px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         position: relative;
+         left: 5px;
+         top: -8vh;
+         text-align: left;
+     }
+
+     .block.mobile-only .footer .footer-content .power {
+         width: 600px;
+         height: 0px;
+         display: grid;
+         flex-direction: column;
+         justify-content: center;
+         position: relative;
+         left: 3vw;
+     }
+
+     .block.mobile-only .footer .footer-content .power .left {
+         color: #b5b0b0;
+         width: 90vw;
+         display: grid;
+         flex-direction: column;
+         justify-content: center;
+         position: relative;
+         left: -25px;
+         top: -70px;
+     }
+
+     .block.mobile-only .footer .footer-content .power .right {
+         color: #b5b0b0;
+         width: 90vw;
+         display: grid;
+         flex-direction: column;
+         justify-content: center;
+         position: relative;
+         left: -52px;
+         top: -70px;
+     }
+
+ }
+
+
+ /* #endregion  */

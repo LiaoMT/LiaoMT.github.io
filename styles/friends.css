@@ -108,3 +108,53 @@ body .friends {
 }
 
 
+/* #region 移动端合作伙伴样式 */
+@media screen and (max-aspect-ratio: 1/1) {
+    .partners-section {
+        text-align: center;
+        padding: 0px 0;
+        flex: 1;
+    }
+
+    .partners-logos .logo4 {
+        background-image: url('../images/partner_icon (4).png');
+    }
+
+    .block.mobile-only .partners-logos {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0%;
+    }
+
+    .block.mobile-only.partners-logos2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 20%;
+    }
+
+    .partners-logos .logo {
+        width:540px;
+    
+        height: 120px;
+    
+        background-size: contain;
+    
+        background-repeat: no-repeat;
+    
+        background-position: center;
+    }
+
+    .partners-logos2 .logo {
+        width:540px;
+    
+        height: 120px;
+    
+        background-size: contain;
+    
+        background-repeat: no-repeat;
+    
+        background-position: center;
+    
+    }
+}
+/*#endregion*/
