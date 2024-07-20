@@ -209,6 +209,44 @@
     left: 52vw;
 }
 
+.about-page .container2 .member_余岚_img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.5vw;
+    /* 设置宽度 */
+    padding-top: calc(15.5vw / 0.56);
+    /* 设置高度 */
+    background-image: url("../images/公司介绍/核心团队/余岚照片.png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 4vw;
+}
+
+.about-page .container2 .member_钱路_img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.5vw;
+    /* 设置宽度 */
+    padding-top: calc(15.5vw / 0.56);
+    /* 设置高度 */
+    background-image: url("../images/公司介绍/核心团队/钱路照片.png");
+    /* 背景图片 */
+    background-size: 100% 100%;
+    /* 使图片适应容器大小 */
+    background-repeat: no-repeat;
+    position: absolute;
+    /* 绝对定位，使元素可以重叠 */
+    left: 52vw;
+}
+
 /*#region 移动端公司介绍*/
 /*视频和文字横排变竖排*/
 @media screen and (max-aspect-ratio: 1/1) {
@@ -346,6 +384,44 @@
         padding-top: calc(35vw / 0.56);
         /* 设置高度 */
         background-image: url("../images/公司介绍/核心团队/梅祖嵩照片.jpg");
+        /* 背景图片 */
+        background-size: 100% 100%;
+        /* 使图片适应容器大小 */
+        background-repeat: no-repeat;
+        position: absolute;
+        /* 绝对定位，使元素可以重叠 */
+        left: 4vw;
+    }
+
+    .about-page .container2 .member_余岚_img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+        /* 设置宽度 */
+        padding-top: calc(35vw / 0.56);
+        /* 设置高度 */
+        background-image: url("../images/公司介绍/核心团队/余岚照片.png");
+        /* 背景图片 */
+        background-size: 100% 100%;
+        /* 使图片适应容器大小 */
+        background-repeat: no-repeat;
+        position: absolute;
+        /* 绝对定位，使元素可以重叠 */
+        left: 4vw;
+    }
+
+    .about-page .container2 .member_钱路_img {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35vw;
+        /* 设置宽度 */
+        padding-top: calc(35vw / 0.56);
+        /* 设置高度 */
+        background-image: url("../images/公司介绍/核心团队/钱路照片.png");
         /* 背景图片 */
         background-size: 100% 100%;
         /* 使图片适应容器大小 */
